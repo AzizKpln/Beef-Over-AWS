@@ -1,6 +1,6 @@
 # Beef-Over-AWS
 
-# ![](image/beef.png)
+# ![](images/beef.png)
 
 # What IS Beef Over AWS/Beef Over AWS Nedir?
 

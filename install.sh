@@ -20,6 +20,7 @@ check_id=$(id > id.txt)
 check_root=$(cat id.txt | cut -d " " -f 1)
 if [[ $check_root == "uid=0(root)" ]];then
 	echo -n "Please run this script without root privilages.."
+        rm id.txt
 	exit
 fi
 rm id.txt

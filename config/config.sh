@@ -1,7 +1,7 @@
 #!/bin/bash
 VAR=$(cat links/username.txt)
 VAR1=$(cat links/password.txt)
-VAR2=$(cat links/domain.txt)
+VAR2=$(cat links/link.txt)
 VAR3=$(cat links/port_number.txt)
 cat << EOM > beef/config.yaml
 # Copyright (c) 2006-2020 Wade Alcorn - wade@bindshell.net

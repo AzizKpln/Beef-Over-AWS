@@ -1,8 +1,5 @@
 # Beef-Over-AWS
-
-# CURRENT VERSION
-
-* 1.1
+* Version:1.1
 
 # ![](images/beef.png)
 

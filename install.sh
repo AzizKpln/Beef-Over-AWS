@@ -48,4 +48,4 @@ echo "--------------------"
 sudo apt install python3
 sudo apt install python3-pip
 pip3 install pyngrok
-#python3 ngrok/ngrok_tunnel.py
+python3 ngrok/ngrok_tunnel.py

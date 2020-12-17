@@ -1,5 +1,9 @@
 # Beef-Over-AWS
 
+# CURRENT VERSION
+
+* 1.1
+
 # ![](images/beef.png)
 
 # What IS Beef Over AWS/Beef Over AWS Nedir?
@@ -23,8 +27,5 @@ Beef-Over-AWS size Beef aracını WAN üzerinden anonim bir şekilde ve güvenli
 
 * https://www.youtube.com/watch?v=qQ8FUOGVS80&feature=youtu.be
 
-# CURRENT VERSION
-
-* 1.1
 
 

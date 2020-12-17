@@ -25,6 +25,6 @@ Beef-Over-AWS size Beef aracını WAN üzerinden anonim bir şekilde ve güvenli
 
 # CURRENT VERSION
 
-* 0.1
+* 1.1
 
 

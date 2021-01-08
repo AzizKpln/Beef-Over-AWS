@@ -1,5 +1,5 @@
 # Beef-Over-AWS
-* Version:1.1
+* Version:2.1
 
 # ![](images/beef.png)
 
@@ -24,5 +24,13 @@ Beef-Over-AWS size Beef aracını WAN üzerinden anonim bir şekilde ve güvenli
 
 * https://www.youtube.com/watch?v=qQ8FUOGVS80&feature=youtu.be
 
+
+# Version 2.1
+
+* Beef was running a bit slow. That issue has fixed.
+
+* Sometimes ngrok was issuing "too many requests" error. That error has fixed.
+
+* This tool was not working properly on ubuntu. Now, it works perfectly.
 
 

@@ -25,4 +25,5 @@ except:
 	with open("links/tunnel.txt","w") as n:
 		n.write(str(write_))
 
-time.sleep(5000)
+while True:
+	pass

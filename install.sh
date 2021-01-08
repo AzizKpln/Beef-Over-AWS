@@ -28,6 +28,7 @@ echo ${green}
 echo "Installing Beef.." 
 echo "--------------------" && sleep 2
 sudo apt update -y
+sudo apt install git -y
 sudo apt-get install libsqlite3-dev -y
 sudo apt-get install libcurl4-openssl-dev -y 
 sudo apt install nodejs -y 

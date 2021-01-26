@@ -1,5 +1,5 @@
 # Beef-Over-AWS
-* Version:2.1
+* Version:2.2
 
 # ![](images/beef.png)
 
@@ -25,7 +25,7 @@ Beef-Over-AWS size Beef aracını WAN üzerinden anonim bir şekilde ve güvenli
 * https://www.youtube.com/watch?v=qQ8FUOGVS80&feature=youtu.be
 
 
-# Version 2.1
+# Version 2.2
 
 * Beef was running a bit slow. That issue has fixed.
 

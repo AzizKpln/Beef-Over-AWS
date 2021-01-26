@@ -2,7 +2,7 @@
 VAR=$(cat links/username.txt)
 VAR1=$(cat links/password.txt)
 VAR2=$(cat links/link.txt)
-VAR3=$(cat links/port_number.txt)
+VAR3=$(cat links/port_)
 cat << EOM > beef/config.yaml
 # Copyright (c) 2006-2020 Wade Alcorn - wade@bindshell.net
 # Browser Exploitation Framework (BeEF) - http://beefproject.com
@@ -62,7 +62,7 @@ beef:
         #   by altering the X-FORWARDED-FOR ip address in the request header.
         allow_reverse_proxy: true
         public: "$VAR2"      # public hostname/IP address
-        public_port: "80" # public port (experimental)
+        public_port: "$port_number" # public port (experimental)
 
         # Hook
         hook_file: "/hook.js"

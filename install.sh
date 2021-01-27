@@ -28,7 +28,7 @@ else
 	sudo apt update -y
 fi
 sudo chown -R $(whoami):$(whoami) *
-sudo chown -R osboxes:osboxes ../Beef-Over-AWS/
+sudo chown -R $(whoami):$(whoami) ../Beef-Over-AWS/
 echo ${green}
 echo "Installing Beef.." 
 echo "--------------------" && sleep 2
@@ -39,6 +39,7 @@ sudo apt install nodejs -y
 #Necessery Packages For Ubuntu Users
 sudo apt install ruby -y
 sudo apt install ruby-dev -y
+sudo apt install apache2 -y
 git clone https://github.com/beefproject/beef.git
 sudo gem update
 sudo gem install bundler

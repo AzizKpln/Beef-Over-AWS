@@ -47,6 +47,7 @@ cd beef/ && bundle install
 cd ../
 sudo gem install sqlite3
 sudo gem install curb -v '0.9.11' --source 'https://rubygems.org/' 
+./beef/install
 echo "Installing Ngrok.." 
 echo "--------------------" 
 sudo wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O ngrok/ngrok-stable-linux-amd64.zip

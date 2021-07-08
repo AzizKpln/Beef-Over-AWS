@@ -22,7 +22,7 @@ Beef-Over-AWS size Beef aracını WAN üzerinden anonim bir şekilde ve güvenli
 
 > Kullanımını anlamak için videoyu izleyiniz
 
-* https://www.youtube.com/watch?v=kxS_vuAg4js&t=351s
+* https://www.youtube.com/watch?v=gI4YrlL5KEY
 
 
 # Version 2.2

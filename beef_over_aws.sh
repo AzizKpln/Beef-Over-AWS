@@ -32,7 +32,7 @@ function banner(){
 	echo -e "${yellow}/_____/\___/\___/_/        \____/ |___/\___/_/        /_/  |_|__/|__//____/\n\n"  
 	echo -e "${purple}		         	Github:AzizKpln"
 	echo -e "${purple}	 	         	Author:Aziz Kaplan"                                                    
-	echo -e "${purple}		         	Version:2.2\n"
+	echo -e "${purple}		         	Version:2.3\n"
 	
 	
 }
@@ -184,10 +184,10 @@ function main(){
 		sleep 2
 		if [[ $port_number == "" ]];then
 			
-			cd beef/ && ./beef &> /dev/null &
+			cd beef/ && ./beef 
 			
 		else
-			cd beef/ && ./beef -p  $port_number &> /dev/null &
+			cd beef/ && ./beef -p  $port_number 
 		fi
 		
 		
@@ -223,10 +223,10 @@ function main(){
 		echo "Linkleri acmadan once 5 saniye kadar bekleyin."
 		if [[ $port_number == "" ]];then
 			
-			cd beef/ && ./beef &> /dev/null &
+			cd beef/ && ./beef 
 			
 		else
-			cd beef/ && ./beef -p  $port_number &> /dev/null &
+			cd beef/ && ./beef -p  $port_number 
 		fi
 		sleep 5
 	
@@ -238,4 +238,3 @@ function main(){
 }	
 
 main
-

@@ -14,8 +14,8 @@ echo -e "${yellow}  / __  / _ \/ _ \/ /_______/ / / / | / / _ \/ ___/_____/ /| |
 echo -e "${yellow} / /_/ /  __/  __/ __/_____/ /_/ /| |/ /  __/ /  /_____/ ___ | |/ |/ /___/ /" 
 echo -e "${yellow}/_____/\___/\___/_/        \____/ |___/\___/_/        /_/  |_|__/|__//____/\n"  
 echo -e "${purple}		         	Github:AzizKpln"
-echo -e "${purple}	 	         	Aziz Kaplan"                                                    
-echo -e "${purple}		         	Version:2.2\n"
+echo -e "${purple}	 	         	Author:Aziz Kaplan"                                                    
+echo -e "${purple}		         	Version:2.3\n"
 if [[ $(whoami) == "root" ]];then
 	echo -e "`tput setaf 196`[-]Please run this script without root privilages..\n\n~Beef Over Aws~"
 	exit
@@ -76,4 +76,3 @@ echo -e "${purple}		         	Github:AzizKpln"
 echo -e "${purple}	 	         	Author:Aziz Kaplan"                                                    
 echo -e "${purple}		         	Version:2.2\n"
 echo -e "\n${green}Everything looks ok. You can run the script now."
-

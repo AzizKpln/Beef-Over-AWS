@@ -4,14 +4,15 @@ VAR1=$(cat links/password.txt)
 VAR2=$(cat links/link.txt)
 VAR3=$(cat links/port_)
 cat << EOM > beef/config.yaml
-# Copyright (c) 2006-2020 Wade Alcorn - wade@bindshell.net
+#
+# Copyright (c) 2006-2021 Wade Alcorn - wade@bindshell.net
 # Browser Exploitation Framework (BeEF) - http://beefproject.com
 # See the file 'doc/COPYING' for copying permission
 #
 # BeEF Configuration file
 
 beef:
-    version: '0.5.0.0-alpha-pre'
+    version: '0.5.2.0'
     # More verbose messages (server-side)
     debug: false
     # More verbose messages (client-side)
@@ -41,7 +42,7 @@ beef:
     http:
         debug: false #Thin::Logging.debug, very verbose. Prints also full exception stack trace.
         host: "0.0.0.0"
-        port: "3000"
+        port: "$VAR3"
 
         # Decrease this setting to 1,000 (ms) if you want more responsiveness
         #  when sending modules and retrieving results.
@@ -52,8 +53,14 @@ beef:
 
         # Host Name / Domain Name
         # If you want BeEF to be accessible via hostname or domain name (ie, DynDNS),
-        #   set the public hostname below:
-        public: "$VAR2"      # public hostname/IP address
+        # These settings will be used to create a public facing URL
+        # This public facing URL will be used for all hook related calls
+        # set the public setting below:
+        public:
+             host: "$VAR2" # public hostname/IP address
+             port: "80" # public port will default to 80 if no https 443 if https 
+                      # and local if not set but there is a public host
+             https: false # true/false
 
         # Reverse Proxy / NAT
         # If you want BeEF to be accessible behind a reverse proxy or NAT,
@@ -61,8 +68,6 @@ beef:
         # NOTE: Allowing the reverse proxy will enable a vulnerability where the ui/panel can be spoofed
         #   by altering the X-FORWARDED-FOR ip address in the request header.
         allow_reverse_proxy: true
-        public: "$VAR2"      # public hostname/IP address
-        public_port: "$port_number" # public port (experimental)
 
         # Hook
         hook_file: "/hook.js"
@@ -94,6 +99,8 @@ beef:
         # Experimental HTTPS support for the hook / admin / all other Thin managed web services
         https:
             enable: false
+            # Enabled this config setting if you're external facing uri is using https
+            public_enabled: false
             # In production environments, be sure to use a valid certificate signed for the value
             # used in beef.http.public (the domain name of the server where you run BeEF)
             key: "beef_key.pem"
@@ -157,4 +164,3 @@ beef:
         xssrays:
             enable: true
 EOM
-

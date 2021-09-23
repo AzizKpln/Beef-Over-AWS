@@ -25,12 +25,18 @@ Beef-Over-AWS size Beef aracını WAN üzerinden anonim bir şekilde ve güvenli
 * https://www.youtube.com/watch?v=gI4YrlL5KEY
 
 
-# Version 2.2
+# Note 0:
+* Installation progress will take a while. Do not interrupt the progress. Especially, don't press to enter.
+* Indirme aşaması biraz vakit alacaktır. Bekleyin bir şeye dokunmayın özellikle enter tuşuna basmayın.
 
-* Beef was running a bit slow. That issue has fixed.
+# Note 1:
+* If you're not seeing any ngrok links on the screen, run the installation file again and issue your ngrok authtoken link: https://www.youtube.com/watch?v=FFkF81r7yNA
+* Eğer ngrok linki görmüyorsanız, indirme dosyasını tekrar çalıştırın ve ngrok authtoken'i araca verin: https://www.youtube.com/watch?v=FFkF81r7yNA
 
-* Sometimes ngrok was issuing "too many requests" error. That error has fixed.
+# Version 2.3
 
-* This tool was not working properly on ubuntu. Now, it works perfectly.
+* All the errors are fixed.
+
+
 
 

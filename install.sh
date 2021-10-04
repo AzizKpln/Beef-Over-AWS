@@ -74,5 +74,5 @@ echo -e "${yellow} / /_/ /  __/  __/ __/_____/ /_/ /| |/ /  __/ /  /_____/ ___ |
 echo -e "${yellow}/_____/\___/\___/_/        \____/ |___/\___/_/        /_/  |_|__/|__//____/\n\n"  
 echo -e "${purple}		         	Github:AzizKpln"
 echo -e "${purple}	 	         	Author:Aziz Kaplan"                                                    
-echo -e "${purple}		         	Version:2.2\n"
+echo -e "${purple}		         	Version:2.3\n"
 echo -e "\n${green}Everything looks ok. You can run the script now."

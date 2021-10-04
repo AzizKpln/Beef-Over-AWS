@@ -12,7 +12,7 @@ echo "${yellow} / /_/ /  __/  __/ __/_____/ /_/ /| |/ /  __/ /  /_____/ ___ | |/
 echo "${yellow}/_____/\___/\___/_/        \____/ |___/\___/_/        /_/  |_|__/|__//____/"  
 echo "${purple}	 	       #>Author:Aziz Kaplan"                                                    
 echo "${purple}		       #>Github:AzizKpln"
-echo "${purple}		       #>Version:1.1\n\n"
+echo "${purple}		       #>Version:2.3\n\n"
 
 echo "${yellow}Killing Python:"
 killall -9 python3 
